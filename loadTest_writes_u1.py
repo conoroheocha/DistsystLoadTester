@@ -30,7 +30,7 @@ class WebsiteUser(HttpUser):
             }
         )
 
-        # # fail with error 400
+        # # fail with error 400 - invalid timestamp
         # self.client.post(
         #     "/writeAvailability", json={
         #         "email": "qroach@example.com",
@@ -45,7 +45,7 @@ class WebsiteUser(HttpUser):
         #     }
         # )
 
-        # # fail with error 400
+        # # fail with error 400 - past cutoff
         # self.client.post(
         #     "/writeAvailability", json={
         #         "email": "qroach@example.com",
