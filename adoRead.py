@@ -5,14 +5,7 @@ class WebsiteUser(HttpUser):
     wait_time = between(0, 15)
 
     def on_start(self):
-        self.login()
         self.getTimes()
-
-    @task
-    def login(self):
-        self.client.post(
-            "/loginAdo", json={"email": "qroach@example.com", "password": "+E9v&uGy6h"}
-        )
 
     @task
     def getTimes(self):

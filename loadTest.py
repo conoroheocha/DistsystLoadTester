@@ -14,6 +14,11 @@ class WebsiteUser(HttpUser):
                                 "email": "qroach@example.com",
                                 "password": "+E9v&uGy6h"
                             })
+    @task
+    def login(self):
+        self.client.post(
+            "/loginAdo", json={"email": "qroach@example.com", "password": "+E9v&uGy6h"}
+        )
 
     # @task
     # def about(self):
