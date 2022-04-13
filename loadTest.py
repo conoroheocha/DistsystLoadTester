@@ -5,14 +5,15 @@ class WebsiteUser(HttpUser):
     wait_time = between(5, 15)
 
     def on_start(self):
-        self.client.post(
-            "/loginAthlete", {"email": "qroach@example.com", "password": "+E9v&ussGy6h"}
-        )
+        self.index()
 
-    # @task
-    # def index(self):
-    #     self.client.get("/")
-    #     self.client.get("/static/assets.js")
+    @task
+    def index(self):
+        self.client.post(
+            "/loginAthlete", json={
+                                "email": "qroach@example.com",
+                                "password": "+E9v&uGy6h"
+                            })
 
     # @task
     # def about(self):
