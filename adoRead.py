@@ -12,7 +12,7 @@ class WebsiteUser(HttpUser):
         self.client.get(
             "/read",
             json={
-                "ADO_email": "charles92@example.net",
-                "Athlete_email": "qroach@example.com",
+                "ADO_email": "smithvincent@example.org",
+                "Athlete_email": "andersonsarah@example.net",
             },
         )

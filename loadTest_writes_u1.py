@@ -18,15 +18,13 @@ class WebsiteUser(HttpUser):
 
         self.client.post(
             "/writeAvailability", json={
-                "email": "qroach@example.com",
-                "availability": [
-                    {
-                        "datetime_start": 1650386248000,
-                        "datetime_end": 1650397048000,
+                "email": "andersonsarah@example.net",
+                "availability": [{
+                        "datetime_start": 1650570272000,
+                        "datetime_end": 1650577472000,
                         "lat": 53.3234,
-                        "lng": 6.2653,
-                    }
-                ]
+                        "lng": 6.2653
+                    }]
             }
         )
 

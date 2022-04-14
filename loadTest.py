@@ -11,13 +11,13 @@ class WebsiteUser(HttpUser):
     def index(self):
         self.client.post(
             "/loginAthlete", json={
-                                "email": "qroach@example.com",
-                                "password": "+E9v&uGy6h"
+                                "email": "andersonsarah@example.net",
+                                "password": "$1u^gGgE2e"
                             })
     @task
     def login(self):
         self.client.post(
-            "/loginAdo", json={"email": "qroach@example.com", "password": "+E9v&uGy6h"}
+            "/loginAdo", json={"email": "smithvincent@example.org", "password": "^@P4x9LjNO"}
         )
 
     # @task
